@@ -1,0 +1,244 @@
+* {
+    box-sizing: border-box;
+}
+.container {
+    
+  
+    height: 500px;
+    width: 500px;
+    
+}
+.box1 {
+    background-color: thistle;
+    height: 35%;
+    width: 65%;
+    float: left;
+}
+.box2 {
+    background-color: turquoise;
+    height: 65%;
+    width: 35%;
+    float: right;
+
+
+}
+.box3 {
+    background-color: yellow;
+    height: 65%;
+    width: 35%;
+    float: left;
+}
+.box4 {
+    background-color: purple;
+    height: 35%;
+    width: 65%;
+    float: right;
+}
+.box1 > div {
+    background-color: purple;
+    height: 75px;
+    width: 75px;
+    border-radius: 50%;
+    position: relative;
+    animation-name: left-to-right;
+    animation-duration: 4s;
+    
+}
+@keyframes left-to-right {
+    0% {
+        left: 0;
+        top: 0;
+    }
+    25%{
+         left: 240px;
+         top: 0;
+    }
+    50% {
+        left: 240px;
+        top: 100px;
+    }
+    75% {
+        left: 0;
+        top: 100px;
+    }
+    
+    100% {
+        left: 0;
+        top: 0;
+    }
+}
+.box2 > div {
+    background-color: yellow;
+    height: 75px;
+    width: 75px;
+    border-radius: 50%;
+    position: relative;
+    animation-name: top-to-bottom;
+    animation-duration: 4s;
+}
+@keyframes top-to-bottom {
+    0%{
+        left: 0;
+        top: 0;
+    }
+    25% {
+        left: 0;
+        top: 240px
+    }
+    50% {
+        left: 100px;
+        top: 240px;
+    }
+    75%{
+        left: 100px;
+        top: 0;
+    }
+    100% {
+        top: 0;
+        bottom: 0;
+
+    }
+}
+.box3 > div {
+    background-color: turquoise;
+    height: 75px;
+    width: 75px;
+    border-radius: 50%;
+    position: relative;
+    animation-name: top-to-bottom;
+    animation-duration: 3s;
+}
+.box4 > div {
+    background-color: thistle;
+    height: 75px;
+    width: 75px;
+    border-radius: 50%;
+    position: relative;
+    animation-name: left-to-right;
+    animation-duration: 3s;
+}
+
+
+}
+/* Ipad pro version, I will attempt to use animation property*/
+@media screen and (max-width: 1024px) {
+    .box1 > div {
+        background-color: purple;
+        height: 75px;
+        width: 75px;
+        border-radius: 50%;
+        position: relative;
+        animation-name: left-to-right;
+        animation-duration: 4s;
+        
+    }
+    @keyframes left-to-right {
+        0% {
+            left: 0;
+            top: 0;
+        }
+        25%{
+             left: 240px;
+             top: 0;
+        }
+        50% {
+            left: 240px;
+            top: 100px;
+        }
+        75% {
+            left: 0;
+            top: 100px;
+        }
+        
+        100% {
+            left: 0;
+            top: 0;
+        }
+    }
+    .box2 > div {
+        background-color: yellow;
+        height: 75px;
+        width: 75px;
+        border-radius: 50%;
+        position: relative;
+        animation-name: top-to-bottom;
+        animation-duration: 4s;
+    }
+    @keyframes top-to-bottom {
+        0%{
+            left: 0;
+            top: 0;
+        }
+        25% {
+            left: 0;
+            top: 240px
+        }
+        50% {
+            left: 100px;
+            top: 240px;
+        }
+        75%{
+            left: 100px;
+            top: 0;
+        }
+        100% {
+            top: 0;
+            bottom: 0;
+
+        }
+    }
+    .box3 > div {
+        background-color: turquoise;
+        height: 75px;
+        width: 75px;
+        border-radius: 50%;
+        position: relative;
+        animation-name: top-to-bottom;
+        animation-duration: 3s;
+    }
+    .box4 > div {
+        background-color: thistle;
+        height: 75px;
+        width: 75px;
+        border-radius: 50%;
+        position: relative;
+        animation-name: left-to-right;
+        animation-duration: 3s;
+    }
+    
+
+}
+
+@media screen and (max-width: 390px){
+    .box1 {
+        background-color: black;
+        
+        
+    }
+    .container {
+        height: 500px;
+        width: 500px;
+        overflow: auto;
+    }
+    .box1, .box2, .box3, .box4 {
+        display: block;
+        float: none;
+        width: 100%;
+        height: 25%;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .container {
+        height: 300px;
+        width: 300px;
+    }
+    .box4 {
+        background-color: burlywood;
+        
+    }
+    .box3 {
+        display: block;
+        background-color: cadetblue;
+    }
+}
